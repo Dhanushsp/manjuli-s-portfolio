@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="output.css">
+</head>
+
+<!-- fontawesome cdn -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+<!-- custom CSS -->
+<style>
+    @keyframes slide {
+        0% {
+            transform: translateX(0);
+        }
+
+        25% {
+            transform: translateX(0);
+        }
+
+        30% {
+            transform: translateX(-100%);
+        }
+
+        50% {
+            transform: translateX(-100%);
+        }
+
+        55% {
+            transform: translateX(-200%);
+        }
+
+        75% {
+            transform: translateX(-200%);
+        }
+
+        80% {
+            transform: translateX(-300%);
+        }
+
+        100% {
+            transform: translateX(-300%);
+        }
+    }
+
+    .wrapper {
+        animation: slide 16s infinite;
+    }
+
+    .profile {
+        box-shadow: rgba(66, 29, 201, 0.25) 0px 54px 55px, rgba(61, 10, 202, 0.12) 0px -12px 30px, rgba(86, 15, 218, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    }
+
+    .nav {
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+    }
+</style>
+
+<body>
+    <!-- Slide Animation banner -->
+    <!-- <div class="w-[85vmin] h-[15vmin] mx-auto my-0 overflow-hidden border-[20px] border-white rounded-lg shadow-[10px_25px_30px_rgba(30,30,200,0.3)] flex items-center justify-center absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+        <div class="relative  wrapper flex w-[400%]">
+            <div class="slide w-full flex items-center justify-center flex-shrink-0">
+                <p class="text-2xl text-center bg-white p-5 text-gray-800 shadow-lg">FoSTaC - ( Advanced manufacturing Level 2 )</p>
+            </div>
+            <div class="slide w-full flex items-center justify-center flex-shrink-0">
+                <p class="text-2xl text-center bg-white p-5 text-gray-800 shadow-lg">NSDC - Food regulatory affairs manager</p>
+            </div>
+            <div class="slide w-full flex items-center justify-center flex-shrink-0">
+                <p class="text-2xl text-center bg-white p-5 text-gray-800 shadow-lg">Food and Nutrition – Swayam</p>
+            </div>
+            <div class="slide w-full flex items-center justify-center flex-shrink-0">
+                <p class="text-2xl text-center bg-white p-5 text-gray-800 shadow-lg">AutoCAD</p>
+            </div>
+            <div class="slide w-full flex items-center justify-center flex-shrink-0">
+                <p class="text-2xl text-center bg-white p-5 text-gray-800 shadow-lg"> CorelDRAW</p>
+            </div>
+        </div>
+    </div> -->
+
+
+    <div>
+        <!-- nav bar -->
+        <nav class="nav">
+            <ul class="flex justify-around py-4 font-Poppins text-gray-500 text-sm md:text-base">
+                <li class=" py-2 px-3 rounded-lg hover:bg-blue-100 cursor-pointer"><a href="#home">HOME</a></li>
+                <li class=" py-2 px-3 rounded-lg hover:bg-blue-100 cursor-pointer"><a href="#about">ABOUT</a></li>
+                <li class=" py-2 px-3 rounded-lg hover:bg-blue-100 cursor-pointer"><a href="#footer">CONTACT</a></li>
+            </ul>
+        </nav>
+
+
+        <!-- Hero sec -->
+        <div id="home">
+            <div
+                class="w-full max-w-4xl flex flex-col md:flex-row items-center justify-between px-10 md:px-14 mx-auto pb-8">
+                <!-- Left side: Image and Name -->
+                <div class="flex flex-col items-center md:items-start space-y-2 md:space-y-5">
+                    <img src="images/profile.jpg" alt="profile picture" class="profile rounded-full h-44 md:h-64 my-10">
+
+                    <div class="flex items-center space-x-2">
+                        <h1 class="font-Pacifico text-4xl md:text-6xl text-blue-800 pb-5">Manjuli</h1>
+                        <span class="font-TulpenOne text-2xl text-gray-400">, here...</span>
+                    </div>
+                </div>
+
+                <!-- Right side: Paragraph -->
+                <div class="md:w-1/2 flex md:items-center">
+                    <div>
+                        <p
+                            class="text-center font-PlaypenSans text-gray-500 text-sm md:text-base pb-5 bg-blue-100   py-5 px-10 rounded-xl mb-5">
+                            <span class="text-red-500 text-lg md:text-xl font-Pacifico">"</span> Teaching English isn’t
+                            just my profession; it’s my passion. <span class="font-bold">I’m here to guide you in mastering the language</span> with
+                            confidence and ease, one lesson at a time.<span
+                                class="text-red-500 text-lg md:text-xl font-Pacifico">" </span>
+                        </p>
+
+                        <div class="w-full flex justify-center space-x-4">
+                            <a href="https://www.instagram.com/manjuli.parihar?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+                                target="_blank"><img src="images/instagram.png" alt="Instagram Icon" class="h-8"></a>
+                            <a href="https://www.youtube.com/@manjulisingh7846" target="_blank"><img
+                                    src="images/youtube.png" alt="YouTube Icon" class="h-8"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <!-- YT section -->
+
+        <div class="flex flex-col items-center justify-center py-16 bg-blue-100" id="about">
+            <h1 class="w-3/4 mb-10 font-bold font-Poppins text-2xl md:text-4xl text-center text-blue-500"> Learn
+                English with Manjuli: One-on-One Coaching</h1>
+            <p class="w-3/4 mb-10 text-base font-PlaypenSans text-gray-500  md:text-lg"> Manjuli helps a student improve
+                their English
+                fluency through personalized one-on-one video sessions.
+                Get real-time guidance to boost your confidence! Visit her website to learn English through her engaging
+                videos.</p>
+
+            <iframe class="w-3/4 h-56 md:h-96 bg-gray-400 p-5 rounded-xl"
+                src="https://www.youtube.com/embed/KLAWqDmBtZA?si=FLuQu3f6lCSGAfkB&start=4&autoplay=1"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+
+        <!-- About -->
+        <div class="flex flex-col items-center justify-center my-16">
+            <h1 class="w-3/4 mb-10 font-bold font-Poppins text-2xl md:text-4xl text-center text-blue-500">About Me
+            </h1>
+            <p
+                class="w-3/4 text-center font-PlaypenSans text-gray-500 text-sm md:text-base pb-5 bg-blue-100   py-5 px-10 rounded-xl mb-5">
+                "Hi, I’m Manjuli, an experienced English teacher focused on helping students build confidence in
+                speaking. My personalized one-on-one lessons make learning practical and engaging. Ready to take your
+                English fluency to the next level? <span class="font-bold">Contact me on Instagram</span> for tailored personal training and start
+                speaking with confidence today!"</p>
+        </div>
+
+        <!-- Footer -->
+        <div class="bg-gray-200" id="footer">
+            <div class="flex justify-between w-4/5 m-auto">
+                <div>
+                    <ul class="flex flex-col py-5 font-IBMPlexMono text-gray-500 text-xs md:text-base">
+                        <li>Contact: 987654321 </li>
+                        <li>Adress: India</li>
+                    </ul>
+                </div>
+
+                <div>
+                    <ul class="flex gap-5 py-5 font-PlaypenSans text-gray-500">
+                        <a href="https://www.instagram.com/manjuli.parihar?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+                            target="_blank"><img src="images/instagram.png" alt="Instagram Icon" class="h-6 md:h-8"></a>
+                        <a href="https://www.youtube.com/@manjulisingh7846" target="_blank"><img
+                                src="images/youtube.png" alt="YouTube Icon" class="h-6 md:h-8"></a>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
